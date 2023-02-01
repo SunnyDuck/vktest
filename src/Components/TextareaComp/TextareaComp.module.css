@@ -1,0 +1,13 @@
+.textareaWrapper{
+    border-radius: 5px;
+    width: 262.1px;
+    height: 18px;
+    resize: none;
+    overflow: hidden;
+}
+
+textarea{
+    outline: none;
+    border: none;
+    margin-top: 9px;
+}

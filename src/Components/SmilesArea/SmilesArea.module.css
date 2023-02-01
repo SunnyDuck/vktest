@@ -1,0 +1,25 @@
+.titleText{
+    color: darkgray;
+    margin-left: 9px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+
+.smileBtn{
+    width: 29px;
+    height: 29px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    gap: 2px;
+}
+
+.smileBtn:hover{
+    background-color: darkgray;
+}
