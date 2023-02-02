@@ -2,6 +2,8 @@ import React from "react";
 import './App.css';
 import TextareaComp from "./Components/TextareaComp/TextareaComp";
 import SmilesArea from "./Components/SmilesArea/SmilesArea";
+import SmileChangeSideBar from "./Components/SmilesChangeSaidbar/SmileChangeSideBar";
+import RecentSmilesArea from "./Components/RecentSmilesArea/RecentSmilesArea";
 
 const App = (props) => {
 
@@ -9,6 +11,7 @@ const App = (props) => {
         key = {d.title}
         title = {d.title}
         smiles = {d.items}
+        recentSmiles = {props.recentSmilesAddFunc}
     />)
 
     let smileAreaVisibility = 'visible';
@@ -23,16 +26,19 @@ const App = (props) => {
     <div className="App">
         <div>
             <div id='smilesArea'>
-                <div className='smileBox'>
+                <div id='smileBox'>
                     {smiles}
                 </div>
-                <div className='smilesChangeSidebar'>
-
+                <div id='recentSmileBox'>
+                    <RecentSmilesArea recentSmiles = {props.store.recentSmiles}/>
                 </div>
+                <SmileChangeSideBar/>
             </div>
             <div className='textArea'>
                 <TextareaComp checkFunc={props.checkFunc}/>
-                <button className='smileActivateBtn' onClick={smileAreaOpacityChange}></button>
+                <div className='smileActivateBtnWrapper'>
+                    <button className='smileActivateBtn' onClick={smileAreaOpacityChange}></button>
+                </div>
             </div>
         </div>
     </div>

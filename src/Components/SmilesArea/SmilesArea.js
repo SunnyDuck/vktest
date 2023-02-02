@@ -3,6 +3,7 @@ import s from './SmilesArea.module.css'
 const SmilesArea = (props) => {
 
     let insertSmile = (symbol) => {
+        props.recentSmiles(symbol);
         document.getElementById('textAreaId').value += symbol;
     }
 

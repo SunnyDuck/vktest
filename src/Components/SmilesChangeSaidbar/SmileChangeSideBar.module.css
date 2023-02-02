@@ -1,0 +1,44 @@
+.smilesChangeSidebar{
+    width: 100%;
+    height: 36px;
+    background-color: rgb(235,236,238);
+    display: flex;
+}
+
+.recentSmilesBtn{
+    width: 19.8px;
+    height: 19.8px;
+    background: url("recentSmileIcon.png") no-repeat;
+    background-size: cover;
+    margin-top: 8.1px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.recentSmilesBtnWrapper{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.smileActivateBtn{
+    width: 19.8px;
+    height: 19.8px;
+    background: url("smileIcon2.png") no-repeat;
+    background-size: cover;
+    margin-top: 8.1px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.smileActivateBtnWrapper{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+}
